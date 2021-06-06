@@ -1,2 +1,2 @@
-# insurance-on-blockchain
+# Insurance-on-Blockchain
 This Application explaining Insurance flow on Blockchain.
