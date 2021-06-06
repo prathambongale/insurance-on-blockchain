@@ -1,5 +1,15 @@
-package info.blockchain.insurance.dataobjects;
+package info.blockchain.insurance.dataobjects.request;
 
-public class CreatePolicyRequest {
-    
+import lombok.*;
+
+import java.io.Serializable;
+
+@Getter
+@Setter
+@ToString
+@AllArgsConstructor
+@NoArgsConstructor
+public class CreatePolicyRequest implements Serializable {
+
+
 }
