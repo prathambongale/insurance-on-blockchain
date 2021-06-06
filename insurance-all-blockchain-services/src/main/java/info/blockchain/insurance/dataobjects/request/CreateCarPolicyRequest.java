@@ -9,7 +9,8 @@ import java.io.Serializable;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class CreatePolicyRequest implements Serializable {
+public class CreateCarPolicyRequest implements Serializable {
 
-
+    private String userData;
+    private String customerPublicKey;
 }

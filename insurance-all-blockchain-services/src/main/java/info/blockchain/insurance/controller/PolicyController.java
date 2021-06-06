@@ -1,11 +1,12 @@
 package info.blockchain.insurance.controller;
 
-import info.blockchain.insurance.dataobjects.request.CreatePolicyRequest;
+import info.blockchain.insurance.dataobjects.request.CreateCarPolicyRequest;
 import info.blockchain.insurance.dataobjects.response.ResponseEntity;
 import info.blockchain.insurance.services.impl.PolicyServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 @Controller("/policy")
 public class PolicyController {
@@ -18,8 +19,8 @@ public class PolicyController {
         this.policyServiceImpl = policyServiceImpl;
     }
 
-    @PutMapping("/createPolicy")
-    public ResponseEntity createPolicy(CreatePolicyRequest createPolicyRequest) {
-        return policyServiceImpl.createPolicy(createPolicyRequest);
+    @PutMapping("/createCarPolicy")
+    public ResponseEntity createCarPolicy(@RequestBody CreateCarPolicyRequest createCarPolicyRequest) {
+        return policyServiceImpl.createCarPolicy(createCarPolicyRequest);
     }
 }
